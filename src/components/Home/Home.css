@@ -5,9 +5,9 @@
 }
 
 .lefthome {
-    width: 50%;
+    width: 60%;
     height: 100vh;
-    padding-left: 13px;
+    padding-left: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,34 +31,51 @@
 
 .homedetails {
     font-size: 2vmax;
+
+
 }
 
 .line1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #4ab809;
+
+
+}
+
+.line4 {
     font-size: 0.8em;
+    color: var(--white);
 }
 
 .line2 {
     font-size: 2.5em;
-    background: linear-gradient(to right, rgb(29, 29, 101), white);
-    background-clip: text;
-    color: transparent;
+    color: #7AFC0F;
 }
 
+
 .line3 {
-    font-size: 0.8em;
+    min-height: 1.5em;
+    height: 1.5em;
+    /* fixed height — stops jump */
+    display: block;
+    overflow: hidden;
+    /* hides any overflow */
+    color: var(--white);
 }
 
 
 .homedetails button {
     padding: 10px 30px;
     background-color: rgb(187, 255, 0);
-    ;
     color: black;
     border: 2px solid white;
     margin-top: 30px;
     border-radius: 20px;
     font-size: 19px;
-    transition: all 0.2s;  /* ✅ */
+    transition: all 0.2s;
     cursor: pointer;
 
 }
@@ -88,21 +105,27 @@
         align-items: end;
     }
 
+    .para {
+        width: 100%;
+    }
+
 
 }
 
 .border-btn {
     margin-top: 10px;
-
+    border-radius: 2px;
+    padding: 14px 36px;
     display: inline-block;
-    padding: .7rem 1.5rem;
     background: #7AFC0F;
     color: #fff;
     font-weight: bold;
     font-size: .9rem;
-    border-radius: 100vw;
-    border: .1rem solid white;
+    /* border: .1rem solid white;  */
     transition: .3s ease-in-out;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+
+
 }
 
 a {
@@ -115,5 +138,35 @@ a {
 
 .para {
     font-size: 2vh;
+    color: var(--gray);
+    width: 100%;
+}
+.skill-float {
+  position: absolute;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: 1px solid rgba(122, 252, 15, 0.3);
+  background: rgba(8, 8, 8, 0.8);
+  color: #7AFC0F;
+  border-radius: 2px;
+  animation: float 3s ease-in-out infinite;
+}
 
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  100%       { transform: translateY(-10px); }
+}
+.sf1 { top: 25%; left: 65%; animation-delay: 0s; }
+  .sf2 { top: 45%; right: 5%; animation-delay: 1s; }
+  .sf3 { bottom: 30%; left: 65%; animation-delay: 2s; }
+
+  #home {
+  position: relative; /* ← add this */
+  width: 100%;
+  min-height: 100%;
+  display: flex;
 }

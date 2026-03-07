@@ -8,19 +8,24 @@ nav {
     position: fixed;
     top: 0;
     z-index: 20px;
-    background-color: #7AFC0F;
+    background: rgba(8, 8, 8, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(122, 252, 15, 0.08);
+    font-family: 'Space Mono', monospace;
+
+
 }
-
-
 
 nav ul a {
     cursor: pointer;
+     font-size: 0.75rem; 
+
 
 }
 
 nav ul a:hover {
     border-bottom: 2px solid;
-    color: #141414;;
+    color: #7AFC0F;
 
 }
 
@@ -35,16 +40,16 @@ ul {
     align-items: center;
     justify-self: center;
     gap: 20px;
-    color: #fff;;
+    color: #fff;
+    ;
     list-style: none;
     font-size: 20px;
 }
 
 nav h1 {
     font-size: 30px;
-    background: linear-gradient(to right, rgb(29, 29, 101), white);
-    background-clip: text;
-    color: transparent;
+    color: #7AFC0F;
+
 
 }
 

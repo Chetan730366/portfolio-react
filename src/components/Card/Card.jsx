@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Card.css"
+import { Typewriter } from "react-simple-typewriter";
 
 function Card() {
     return (
