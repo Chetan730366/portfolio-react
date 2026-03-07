@@ -30,12 +30,12 @@ function Home() {
 
             </div>
             <div className="righthome">
-                <div classNameclass="skill-float sf1">React.js</div>
-                <div classNameclass="skill-float sf2">GSAP</div>
-                <div classNameclass="skill-float sf3">Tailwind</div>
+                <div className="skill-float sf1">React.js</div>
+                <div className="skill-float sf2">GSAP</div>
+                <div className="skill-float sf3">Tailwind</div>
 
-                <img src={personal} alt="Chetan" />
 
+                {personal && <img src={personal} alt="Chetan" />}
             </div>
         </div >
     )
