@@ -2,6 +2,10 @@
 import "./Home.css"
 import personal from "../../assets/personal.png"
 import { Typewriter } from 'react-simple-typewriter';
+import resumePDF from "../../assets/chetan1.pdf";
+
+
+
 function Home() {
     return (
         <div id="home">
@@ -12,14 +16,15 @@ function Home() {
                     < div className="line3">
                         <Typewriter
                             words={["Web Developer", "Front-End Developer"]}
-                            typeSpeed={100}     // ✅ correct
-                            delaySpeed={1500}   // ✅ correct
+                            typeSpeed={100}
+                            delaySpeed={1500}
                             loop={true}
                             cursor
                         />
                     </div>
+                    <p className="para"> I am actively looking for internships, freelance opportunities, or entry-level roles where I can grow as a developer. Let’s connect!</p>
 
-                    <button>hire me</button>
+                    <a href={resumePDF} download={"chetan1.pdf"} className="btn border-btn">download cv</a>
                 </div>
 
             </div>

@@ -7,6 +7,7 @@
 .lefthome {
     width: 50%;
     height: 100vh;
+    padding-left: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +58,7 @@
     margin-top: 30px;
     border-radius: 20px;
     font-size: 19px;
-    transition: all o.2s;
+    transition: all 0.2s;  /* ✅ */
     cursor: pointer;
 
 }
@@ -70,11 +71,14 @@
 @media (max-width:750px) {
     #home {
         flex-direction: column-reverse;
+
     }
 
     .lefthome {
         width: 100%;
         height: 50vh;
+        padding-left: 10px;
+
 
     }
 
@@ -84,5 +88,32 @@
         align-items: end;
     }
 
+
+}
+
+.border-btn {
+    margin-top: 10px;
+
+    display: inline-block;
+    padding: .7rem 1.5rem;
+    background: #7AFC0F;
+    color: #fff;
+    font-weight: bold;
+    font-size: .9rem;
+    border-radius: 100vw;
+    border: .1rem solid white;
+    transition: .3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.para {
+    font-size: 2vh;
 
 }
