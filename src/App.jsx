@@ -1,15 +1,18 @@
 import Nav from "./components/Nav/Nav"
-import About from "./components/About/About"
-import Card from "./components/Card/Card"
+import Headline from "./components/Headline/Headline"
 import Home from "./components/Home/Home"
+import Skill from "./components/Skill/Skill"
+
+
+
 
 function App() {
   return (
     <>
       <Nav />
       <Home />
-      <About />
-      <Card />
+      <Headline />
+      <Skill />
     </>
   )
 }
