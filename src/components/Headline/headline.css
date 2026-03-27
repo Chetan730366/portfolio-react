@@ -1,6 +1,7 @@
 .headline {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: bold;
+    text-align: center;
 }
 
 .headline {
