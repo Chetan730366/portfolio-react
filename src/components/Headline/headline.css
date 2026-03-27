@@ -1,4 +1,9 @@
 .headline {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.headline {
     background-color: #7AFC0F;
     ;
     width: 100%;
